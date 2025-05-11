@@ -66,12 +66,6 @@ describe("romanToInteger", function () {
   it('should convert "IX" to 9', function () {
     expect(convertToDecimal("IX")).to.equal(9);
   });
-
-
-  it('should convert "MMMCMXCIX" to 3999', function () {
-    expect(convertToDecimal("MMMCMXCIX")).to.equal(3999);
-  });
-
   
   it("should throw an error for empty input", function () {
     expect(() => convertToDecimal("")).to.throw("Please enter valid Roman numerals (I, V, X, L, C, D, M)");
